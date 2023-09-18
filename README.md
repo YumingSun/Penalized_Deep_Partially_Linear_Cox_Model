@@ -7,7 +7,6 @@ Table of contents
    * [Table of contents](#table-of-contents)
    * [Overview](#overview)
    * [Requirements](#requirements)
-   * [SCAD-penalized Deep Partially Linear Cox Models](#DPLC)
    * [Data](#data)
    * [Demo](#demo)
 <!--tc-->
@@ -22,18 +21,10 @@ Requirements
 
 The project has been tested on Python 3.7.4 with `PyTorch == 1.12.1+cu102`, `Scikit-learn == 1.1.3` , `Pandas == 1.4.4` and `Numpy == 1.24.2`.
 
-SCAD-penalized Deep Partially Linear Cox Models: 
-===========
-
-A partially linear Cox model assumes a hazard function: 
-$$
-\lambda(t|\mathbf{x},\mathbf{z}) = \lambda_0(t)\exp(\boldsymbol{\beta}_0^{\top}\mathbf{x} + g_0(\mathbf{z})),
-$$
-
 
 Data
 ====
-The training dataset, `TrainingData.csv`, and the testing dataset, `TestingData.csv`, are simulated as described in the _Simulation Study_ part of the papaer. There are 16,000 observations in the training dataset and 4,000 observations in the testing dataset. Both of the two datasets have one label and three features. 
+The training dataset, `TrainingData.csv`, and the testing dataset, `TestingData.csv`, are simulated as described in the _Simulation Study_ part of the paper. There are 16,000 observations in the training dataset and 4,000 observations in the testing dataset. Both of the two datasets have one label and three features. 
 
 Demo
 ====
