@@ -7,7 +7,7 @@ Table of contents
    * [Table of contents](#table-of-contents)
    * [Overview](#overview)
    * [Requirements](#requirements)
-   * [INNER Model](#inner-model)
+   * [SCAD-penalized Deep Partially Linear Cox Models](#DPLC)
    * [Data](#data)
    * [Demo](#demo)
 <!--tc-->
