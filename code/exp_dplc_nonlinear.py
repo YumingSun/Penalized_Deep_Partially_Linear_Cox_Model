@@ -109,8 +109,8 @@ if __name__ == '__main__':
     neuron2 = int(sys.argv[2])
     dropout1 = float(sys.argv[3])
     dropout2 = float(sys.argv[4])
-    train_sample_size = int(sys.argv[5])
-    select_dim = int(sys.argv[8])
+    train_sample_size = 500
+    select_dim = 600
     
     dataLoc = '../data'
     # dataLoc = '/nfs/turbo/jiankanggroup/yumsun/C90/N{:04d}P{:04d}'.format(train_sample_size,select_dim)
