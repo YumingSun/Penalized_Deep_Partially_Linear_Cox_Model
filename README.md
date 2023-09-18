@@ -22,7 +22,7 @@ Requirements
 
 The project has been tested on Python 3.7.4 with `PyTorch == 1.12.1+cu102`, `Scikit-learn == 1.1.3` , `Pandas == 1.4.4` and `Numpy == 1.24.2`.
 
-SCAD-penalized Deep Partially Linear Cox Models
+SCAD-penalized Deep Partially Linear Cox Models: 
 ===========
 
 A partially linear Cox model assumes a hazard function: 
