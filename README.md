@@ -26,6 +26,9 @@ SCAD-penalized Deep Partially Linear Cox Models:
 ===========
 
 A partially linear Cox model assumes a hazard function: 
+$$
+\lambda(t|\mathbf{x},\mathbf{z}) = \lambda_0(t)\exp(\boldsymbol{\beta}_0^{\top}\mathbf{x} + g_0(\mathbf{z})),
+$$
 
 
 Data
