@@ -1,4 +1,4 @@
-# Penalized  Deep Partially Linear Cox Models with Application to CT Scans of Lung Cancer Patients
+# Penalized Deep Partially Linear Cox Models with Application to CT Scans of Lung Cancer Patients
 
 Table of contents
 =================
@@ -20,17 +20,13 @@ Lung cancer is a leading cause of cancer mortality globally, highlighting the im
 Requirements
 ============
 
-The project has been tested on Python 3.7.4 with `Tensorflow == 2.0.0`, `Scikit-learn == 0.20.2` , `Pandas == 0.24.1` and `Numpy == 1.17.4`.
+The project has been tested on Python 3.7.4 with `PyTorch == 1.12.1+cu102`, `Scikit-learn == 1.1.3` , `Pandas == 1.4.4` and `Numpy == 1.24.2`.
 
-INNER Model
+SCAD-penalized Deep Partially Linear Cox Models
 ===========
 
-<img align="middle" src="https://github.com/YumingSun/INNER/blob/master/utilities/ArchitecutreOfINNER.png">
+A partially linear Cox model assumes a hazard function:
 
-In the INNER model, we  utilize DNN to construct individualized coefficients in a logistic regression model, wherein  the regression coefficients are functions of individual characteristics. They lead to two metrics, Baseline Opioid Tendency (BOT) and Pain-induced Opioid Tendency (POT), which are useful for the individualized assessment of opioid use for each patient. In particular, BOT refers to the odds of receiving preoperative opioids when the patient does not report pain and POT is the odds ratio of  receiving preoperative opioids for one unit increase in the reported overall body pain. To print the summary of the INNER model architecture used for AOS data run:
-```
-$ python SummaryModel.py
-```
 
 Data
 ====
