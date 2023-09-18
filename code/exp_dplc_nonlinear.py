@@ -110,8 +110,6 @@ if __name__ == '__main__':
     dropout1 = float(sys.argv[3])
     dropout2 = float(sys.argv[4])
     train_sample_size = int(sys.argv[5])
-    numOfExp = int(sys.argv[6])
-    signal_strength = int(sys.argv[7])
     select_dim = int(sys.argv[8])
     
     dataLoc = '../data'
@@ -126,11 +124,7 @@ if __name__ == '__main__':
                               neuron1,neuron2,dropout1,dropout2)
     
     print('False Positive: {}, False Negative: {}, C Test: {}'.format(metric['BIC']['False Positive'], metric['BIC']['False Negative'], metric['BIC']['C Test']))
-    #pickle.dump(metric, open(os.path.join(resultLoc,'result_exp_{:03d}.pkl'.format(numOfExp)),
-    #                         'wb')
-    #            )
-    #pickle.dump(model, open(os.path.join(resultLoc,'trained_model_exp_{:03d}.pkl'.format(numOfExp)),
-    #                         'wb')
-    #            )
+    pickle.dump(metric, open('results.pkl','wb'))
+    pickle.dump(model, open('trained_model.pkl','wb'))
     
 
