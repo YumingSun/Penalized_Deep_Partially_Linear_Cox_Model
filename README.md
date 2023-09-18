@@ -24,7 +24,7 @@ The project has been tested on Python 3.7.4 with `PyTorch == 1.12.1+cu102`, `Sci
 
 Data
 ====
-The training dataset, `TrainingData.csv`, and the testing dataset, `TestingData.csv`, are simulated as described in the _Simulation Study_ part of the paper. There are 16,000 observations in the training dataset and 4,000 observations in the testing dataset. Both of the two datasets have one label and three features. 
+The datasets, `no_select.h5`, `select.h5`, and `y.h5`, contain the 500 training samples and 1,000 testing samples simulated as described in the _Simulations_ part of the paper.  `no_select.h5` includes 8 features which are the input of the DNN. `select.h5` contains 600 features in which 10 features are `activate`. `y.h5` includes the survival time and censoring label for each patient.
 
 Demo
 ====
