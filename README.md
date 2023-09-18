@@ -25,7 +25,7 @@ The project has been tested on Python 3.7.4 with `PyTorch == 1.12.1+cu102`, `Sci
 SCAD-penalized Deep Partially Linear Cox Models
 ===========
 
-A partially linear Cox model assumes a hazard function:
+A partially linear Cox model assumes a hazard function: 
 
 
 Data
