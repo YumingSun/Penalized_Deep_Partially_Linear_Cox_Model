@@ -28,7 +28,7 @@ The datasets, `no_select.h5`, `select.h5`, and `y.h5`, contain the 500 training 
 
 Demo
 ====
-* `exp_dplc_nonlinear.py`: The script used to train the Penalized DPLC and assess the model performance. It trains a DNN with 2 hidden layers followed by two dropout layers. This script takes 4 arguments, the number of hidden layers in the two hidden layers, and the dropout rate of the two dropout layers. It outputs the False Positive Number, False Negative Number, and C-index. The detailed results and trained DPLC model is save to the working directory.
+* `exp_dplc_nonlinear.py`: The script used to train the Penalized DPLC and assess the model performance. It trains a DNN with 2 hidden layers followed by two dropout layers. This script takes 4 arguments, the number of neurons in the two hidden layers, and the dropout rate of the two dropout layers. It outputs the False Positive Number, False Negative Number, and C-index. The detailed results and trained DPLC model are saved to the working directory.
 ```
 $ python -u exp_dplc_nonlinear.py 8 4 0.3 0.3
 ```
