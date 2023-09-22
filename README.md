@@ -19,7 +19,7 @@ Lung cancer is a leading cause of cancer mortality globally, highlighting the im
 Requirements
 ============
 
-The project has been tested on Python 3.7.4 with `PyTorch == 1.12.1+cu102`, `Scikit-learn == 1.1.3` , `Pandas == 1.4.4` and `Numpy == 1.24.2`.
+The project has been tested on Python 3.9.7 with `PyTorch == 1.12.1+cu102`, `scikit-survival == 0.19.0.post1` , `Pandas == 1.4.4` and `Numpy == 1.24.2`.
 
 
 Data
@@ -28,7 +28,9 @@ The datasets, `no_select.h5`, `select.h5`, and `y.h5`, contain the 1,500 trainin
 
 Demo
 ====
-* `exp_dplc_nonlinear.py`: The script used to train the Penalized DPLC and assess the model performance. It trains a DNN with 2 hidden layers followed by two dropout layers. This script takes 4 arguments, the number of neurons in the two hidden layers, and the dropout rate of the two dropout layers. It outputs the False Positive Number, False Negative Number, and C-index. The detailed results and trained DPLC model are saved to the working directory.
+
+* `exp_dplc.py`: The script is used to train the Penalized DPLC and assess the model performance. It trains a DNN with 2 hidden layers followed by two dropout layers. This script takes 4 arguments, the number of neurons in the two hidden layers, and the dropout rate of the two dropout layers. It outputs the False Positive Number, False Negative Number, and C-index.
+
 ```
-$ python -u exp_dplc_nonlinear.py 8 4 0.3 0.3
+$ python -u exp_dplc.py 8 4 0.3 0.3
 ```
