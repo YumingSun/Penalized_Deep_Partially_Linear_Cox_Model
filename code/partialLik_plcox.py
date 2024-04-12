@@ -79,7 +79,7 @@ def coxph_loss_scad_like(predictions,outcome):
     n = predictions.size(0)
     haz = torch.zeros_like(predictions)
     rsk = torch.zeros_like(predictions)
-    delta = outcome[:,0]
+    delta = outcome[:,1]
     Loss = torch.tensor(0,dtype = torch.double)
     for i in range(n): haz[i] = torch.exp(predictions[i])
     rsk[n-1] = haz[n-1]
